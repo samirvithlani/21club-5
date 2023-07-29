@@ -4,15 +4,18 @@ import "./footer.css";
 import HomeComponent from "./components/HomeComponent";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { Student } from "./components/student/Student";
 function App() {
   //js code
   //var users =undefined;
+  var title  = "Student App";
 
   return (
     <div className="App">
-      <Header/>
+      {/* <Header/>
       <HomeComponent/>
-      <Footer/>
+      <Footer/> */}
+      <Student title ={title}/>
      
 
     </div>

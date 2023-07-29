@@ -1,0 +1,21 @@
+props
+A --> B __>c  props drilling
+
+
+context api
+
+redux
+
+VIRTUAL DOM ---> 
+
+DOM manipulation is expensive
+
+REACT HAS CREATED A VIRTUAL DOM   --> DOM --> state change --> VIRTUAL DOM --> DOM
+
+comapre the virtual dom with the real dom and then update the real dom
+
+react hooks
+
+useStates --> functional component
+defination : 
+usestate is a hook that lets you add react state to functional components
