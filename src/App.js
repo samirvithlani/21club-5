@@ -6,6 +6,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Student } from "./components/student/Student";
 import { RegisterStudent } from "./components/student/RegisterStudent";
+import { UserReg } from "./components/UserReg";
 function App() {
   //js code
   //var users =undefined;
@@ -17,7 +18,8 @@ function App() {
       <HomeComponent/>
       <Footer/> */}
       {/* <Student title ={title}/> */}
-      <RegisterStudent/>
+      {/* <RegisterStudent/> */}
+      <UserReg/>
      
 
     </div>
