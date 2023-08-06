@@ -19,3 +19,8 @@ react hooks
 useStates --> functional component
 defination : 
 usestate is a hook that lets you add react state to functional components
+
+
+countries --> 3
+states --> 3
+cities --> 3

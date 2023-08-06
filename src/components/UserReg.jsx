@@ -74,7 +74,7 @@ export const UserReg = () => {
             </div>
             <div>
                 <label htmlFor="country">Country</label>
-                <select {...register("country")}>
+                <select  {...register("country")}>
                     <option value="india">INDIA</option>
                     <option value="usa">USA</option>
                     <option value="uk">UK</option>
