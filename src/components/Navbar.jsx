@@ -17,7 +17,18 @@ export const Navbar = () => {
       <li class="nav-item">
         <Link class="nav-link" to="/contactus">contactus</Link>
       </li>
-    
+      <li class="nav-item">
+        <Link class="nav-link" to="/storage">store</Link>
+      </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="/counter">counter</Link>
+      </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="/apidemo1">API DEMO 1</Link>
+      </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="/apidemo2">API DEMO 2</Link>
+      </li>
     </ul>
     
   </div>

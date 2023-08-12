@@ -15,6 +15,11 @@ import { AboutCompany } from "./components/AboutCompany";
 import { AboutCountry } from "./components/AboutCountry";
 import { ContactPerson } from "./components/ContactPerson";
 import { Error404 } from "./components/Error404";
+import { Sotrage } from "./components/Sotrage";
+import { Counter } from "./components/Counter";
+import { ProtectedRoutes } from "./components/ProtectedRoutes";
+import { ApiDemo1 } from "./components/api/ApiDemo1";
+import { ApiDemo2 } from "./components/api/ApiDemo2";
 function App() {
   //js code
   //var users =undefined;
@@ -30,14 +35,21 @@ function App() {
       {/* <UserReg/> */}
       <Navbar />
       <Routes>
-        <Route path="/" element={<UserReg/>}></Route>
-        <Route path="/aboutus" element={<AboutUs />}></Route>
-        <Route path="/contactus" element={<ContactUs />}></Route>
+        <Route path="/" element={<UserReg />}></Route>
+        <Route element={<ProtectedRoutes />}>
+          <Route path="/aboutus" element={<AboutUs />}></Route>
+          <Route path="/contactus" element={<ContactUs />}></Route>
+        </Route>
+
         <Route path="/aboutus/company" element={<AboutCompany />}></Route>
         <Route path="/aboutus/country" element={<AboutCountry />}></Route>
-        <Route path ="/contactus/person/:id" element={<ContactPerson/>}></Route>
+        <Route path="/contactus/person/:id" element={<ContactPerson />}></Route>
+        <Route path="/storage" element={<Sotrage />}></Route>
+        <Route path="/counter" element={<Counter />}></Route>
+        <Route path ="/apidemo1" element={<ApiDemo1/>}></Route>
+        <Route path ="/apidemo2" element={<ApiDemo2/>}></Route>
         {/* <Route path="/*" element={<h1>Page Not Found</h1>}></Route> */}
-        <Route path="/*" element={<Error404/>}></Route>
+        <Route path="/*" element={<Error404 />}></Route>
       </Routes>
     </div>
   );
