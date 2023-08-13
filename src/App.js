@@ -20,6 +20,7 @@ import { Counter } from "./components/Counter";
 import { ProtectedRoutes } from "./components/ProtectedRoutes";
 import { ApiDemo1 } from "./components/api/ApiDemo1";
 import { ApiDemo2 } from "./components/api/ApiDemo2";
+import { APiDemo3 } from "./components/api/APiDemo3";
 function App() {
   //js code
   //var users =undefined;
@@ -48,6 +49,7 @@ function App() {
         <Route path="/counter" element={<Counter />}></Route>
         <Route path ="/apidemo1" element={<ApiDemo1/>}></Route>
         <Route path ="/apidemo2" element={<ApiDemo2/>}></Route>
+        <Route path ="/apidemo3" element={<APiDemo3/>}></Route>
         {/* <Route path="/*" element={<h1>Page Not Found</h1>}></Route> */}
         <Route path="/*" element={<Error404 />}></Route>
       </Routes>
