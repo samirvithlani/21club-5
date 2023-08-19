@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export const ApiDemo1 = () => {
   const [users, setusers] = useState([]);
@@ -57,6 +58,8 @@ export const ApiDemo1 = () => {
                         <td>{user.age}</td>
                         <td>
                             <button onClick={()=>{deleteData(user._id)}} className="btn btn-danger">DELEET</button>
+                            <Link to={`/userdetail/${user._id}`} className="btn btn-primary">DETAIL</Link>
+                            <Link to={`/userupdate/${user._id}`} className="btn btn-info">update</Link>
                         </td>
                     </tr>
                 })

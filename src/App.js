@@ -21,10 +21,16 @@ import { ProtectedRoutes } from "./components/ProtectedRoutes";
 import { ApiDemo1 } from "./components/api/ApiDemo1";
 import { ApiDemo2 } from "./components/api/ApiDemo2";
 import { APiDemo3 } from "./components/api/APiDemo3";
+import { UserDetail } from "./components/api/UserDetail";
+import { UserUpdate } from "./components/api/UserUpdate";
+import { FetchUserDataq } from "./components/FetchUserDataq";
+import axios from "axios";
 function App() {
   //js code
   //var users =undefined;
   var title = "Student App";
+  //axios.defaults.baseURL = "https://node5.onrender.com";
+  axios.defaults.baseURL = "http://localhost:3001";
 
   return (
     <div className="App">
@@ -50,6 +56,10 @@ function App() {
         <Route path ="/apidemo1" element={<ApiDemo1/>}></Route>
         <Route path ="/apidemo2" element={<ApiDemo2/>}></Route>
         <Route path ="/apidemo3" element={<APiDemo3/>}></Route>
+        <Route path ="/userdetail/:id" element ={<UserDetail/>}></Route>
+        <Route path="/userupdate/:id" element ={<UserUpdate/>}></Route>
+        <Route path="/fetchuserdata" element= {<FetchUserDataq/>}></Route>
+
         {/* <Route path="/*" element={<h1>Page Not Found</h1>}></Route> */}
         <Route path="/*" element={<Error404 />}></Route>
       </Routes>

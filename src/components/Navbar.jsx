@@ -32,7 +32,12 @@ export const Navbar = () => {
       <li class="nav-item">
         <Link class="nav-link" to="/apidemo3">API DEMO 3</Link>
       </li>
-    </ul>
+    
+    
+    <li class="nav-item">
+        <Link class="nav-link" to="/fetchuserdata">fetchuserdata</Link>
+      </li>
+      </ul>
     
   </div>
 </nav>
