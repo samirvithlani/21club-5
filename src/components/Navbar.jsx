@@ -37,6 +37,10 @@ export const Navbar = () => {
     <li class="nav-item">
         <Link class="nav-link" to="/fetchuserdata">fetchuserdata</Link>
       </li>
+      
+      <li class="nav-item">
+        <Link class="nav-link" to="/adduserdata">adduserdata</Link>
+      </li>
       </ul>
     
   </div>
