@@ -5,17 +5,19 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
-
+import { store } from "./store";
+import { Provider } from "react-redux";
 const root = ReactDOM.createRoot(document.getElementById("root")); /// creating a root for the app, virtual dom
 const client = new QueryClient();
+
 root.render(
-  
+  <Provider store={store}>
     <QueryClientProvider client={client}>
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </QueryClientProvider>
-  
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

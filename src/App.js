@@ -30,6 +30,8 @@ import { Books } from "./context/Books";
 import { AppContext } from "./context/context";
 import { FilterData } from "./components/FilterData";
 import { FileUploading } from "./components/FileUploading";
+import { TrasnsAction } from "./components/bankex/TrasnsAction";
+import { BankHeader } from "./components/bankex/BankHeader";
 function App() {
   //js code
   //var users =undefined;
@@ -74,6 +76,8 @@ function App() {
           <Route path="/books" element={<Books />}></Route>
           <Route path="/filuser" element={<FilterData/>}></Route>
           <Route path="/fileupload" element ={<FileUploading/>}></Route>
+          <Route path ="/transaction" element ={<TrasnsAction/>}></Route>
+          <Route path ="/bankHeader" element = {<BankHeader/>}></Route>
 
           {/* <Route path="/*" element={<h1>Page Not Found</h1>}></Route> */}
           <Route path="/*" element={<Error404 />}></Route>
