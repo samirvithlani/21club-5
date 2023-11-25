@@ -32,6 +32,7 @@ import { FilterData } from "./components/FilterData";
 import { FileUploading } from "./components/FileUploading";
 import { TrasnsAction } from "./components/bankex/TrasnsAction";
 import { BankHeader } from "./components/bankex/BankHeader";
+import { APiDemo4 } from "./components/api/APiDemo4";
 function App() {
   //js code
   //var users =undefined;
@@ -68,7 +69,7 @@ function App() {
           <Route path="/counter" element={<Counter />}></Route>
           <Route path="/apidemo1" element={<ApiDemo1 />}></Route>
           <Route path="/apidemo2" element={<ApiDemo2 />}></Route>
-          <Route path="/apidemo3" element={<APiDemo3 />}></Route>
+          <Route path="/apidemo3" element={<APiDemo4 />}></Route>
           <Route path="/userdetail/:id" element={<UserDetail />}></Route>
           <Route path="/userupdate/:id" element={<UserUpdate />}></Route>
           <Route path="/fetchuserdata" element={<FetchUserDataq />}></Route>
