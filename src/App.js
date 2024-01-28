@@ -33,6 +33,8 @@ import { FileUploading } from "./components/FileUploading";
 import { TrasnsAction } from "./components/bankex/TrasnsAction";
 import { BankHeader } from "./components/bankex/BankHeader";
 import { APiDemo4 } from "./components/api/APiDemo4";
+import { MuiDemo1 } from "./mui/MuiDemo1";
+import { MuiDataTable } from "./mui/MuiDataTable";
 function App() {
   //js code
   //var users =undefined;
@@ -79,7 +81,8 @@ function App() {
           <Route path="/fileupload" element ={<FileUploading/>}></Route>
           <Route path ="/transaction" element ={<TrasnsAction/>}></Route>
           <Route path ="/bankHeader" element = {<BankHeader/>}></Route>
-
+          <Route path = "/muidemo1" element ={<MuiDemo1/>}></Route>
+          <Route path ="/muitable" element = {<MuiDataTable/>}></Route>
           {/* <Route path="/*" element={<h1>Page Not Found</h1>}></Route> */}
           <Route path="/*" element={<Error404 />}></Route>
         </Routes>
